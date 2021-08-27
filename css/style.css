@@ -73,6 +73,21 @@ body,html{
     z-index: -1;
     border-radius: 4px;
 }
+.font-roboto{
+    font-family: var(--roboto);
+}
+.title-h1{
+    font: normal bold 39px/ 40px var(--roboto);
+}
+button:focus,
+button:active
+button:hover
+.btn:active,
+.btn.active{
+    outline: 0px !important;
+    box-shadow: none !important;
+}
+/* global classes */
 
 /* start navigation */
 
@@ -211,3 +226,47 @@ body,html{
 }
 
 /* end brand area */
+
+/* start services area */
+
+.site-main .services-area{
+    padding: 7rem 2rem;
+}
+.site-main .services-area .services-title{
+    
+}
+.site-main > .services-area .services{
+    background: rgba(248, 252, 253, 0.973);
+    padding: 2rem 0;
+    width: 16rem;
+    margin: 5rem .5rem;
+    transition: box-shadow .7s ease;
+}
+.site-main > .services-area .services:hover{
+    box-shadow: var(--box-shadow);
+}
+
+/* end services area */
+
+/* Project area */
+
+.site-main .project-area{
+    padding: 4rem 0;
+}
+.site-main .project-area .button-group button{
+    background: transparent;
+    border: none;
+    font: normal 500 16px/130px var(--open-sans);
+    text-transform: uppercase;
+}
+.site-main .project-area .button-group button + button{
+    padding-left: 4rem;
+}
+.site-main .project-area .grid .our-project > .title h4{
+    font: normal 700 25px/12px var(--open-sans);
+}
+.site-main .project-area .grid .our-project .img a:hover img{
+    filter: brightness(1.1) drop-shadow(1px 8px 30px #b1afaf);
+}
+/* Project area */
+
